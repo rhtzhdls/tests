@@ -1,0 +1,1156 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>365 포커 - 최고의 온라인 포커 게임</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet" />
+    <style>
+      * {
+        font-family: "Noto Sans KR", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-900 text-white">
+    <!-- 네비게이션 바 수정 -->
+    <nav class="fixed w-full bg-gray-900/50 backdrop-blur-sm z-50">
+      <div class="container mx-auto px-8 py-4 flex justify-between items-center">
+        <div class="flex items-center">
+          <img src="images/logo.png" alt="365포커 로고" class="h-10 md:h-16" />
+        </div>
+        <div class="hidden md:flex space-x-6">
+          <a href="#home" class="hover:text-yellow-500 transition">홈</a>
+          <a href="#download" class="hover:text-yellow-500 transition">다운로드</a>
+          <a href="#partner" class="hover:text-yellow-500 transition">총판모집</a>
+          <a href="https://t.me/PP365KK" target="_blank" class="hover:text-yellow-500 transition">가입문의</a>
+        </div>
+        <!-- 모바일 메뉴 버튼 -->
+        <button id="mobileMenuButton" class="md:hidden text-white hover:text-yellow-500 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+      <!-- 모바일 메뉴 -->
+      <div id="mobileMenu" class="hidden md:hidden bg-gray-800 p-4">
+        <div class="flex flex-col space-y-4">
+          <a href="#home" class="hover:text-yellow-500 transition">홈</a>
+          <a href="#download" class="hover:text-yellow-500 transition">다운로드</a>
+          <a href="#partner" class="hover:text-yellow-500 transition">총판모집</a>
+          <a href="#contact" class="hover:text-yellow-500 transition">가입문의</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 히어로 섹션을 슬라이드로 수정 -->
+    <section id="home" class="min-h-screen relative overflow-hidden bg-gradient-to-b from-gray-800 to-gray-900">
+      <!-- 슬라이드 1 수정 -->
+      <div class="slide absolute inset-0 flex items-center justify-center transition-opacity duration-500 opacity-100">
+        <div class="absolute inset-0 z-0">
+          <img src="images/hero-bg-1.jpg?v=1" alt="포커 게임 배경" class="w-full h-full object-cover opacity-30" />
+        </div>
+        <div class="container mx-auto px-8 py-20 relative z-10">
+          <div class="md:w-[900px] flex flex-col md:flex-row items-center gap-4 md:gap-16 mx-auto">
+            <div class="w-full md:w-[700px] flex items-center justify-center">
+              <img src="images/battle_baccarat.jpg?v=1" alt="포커 게임 이미지" class="w-[400px] md:w-[700px] rounded-xl shadow-2xl" />
+            </div>
+            <div class="flex-auto w-full text-center flex flex-col items-center">
+              <img src="images/battle_logo.png?v=1" alt="365포커 로고" class="hidden md:block h-24 md:h-32 mx-auto md:mx-0 mb-8" />
+              <h1 class="text-xl md:text-4xl font-bold mb-6">2025년 4월 전투바카라 런칭!</h1>
+              <p class="text-sm md:text-2xl mb-8 text-gray-300">
+                어디에서도 찾아 볼수없는<br/>
+                딜러와의 승부가 아닌<br/>
+                유저들의 짜릿한 바카라 승부!
+              </p>
+              <div class="flex flex-col md:flex-row gap-4">
+                <div class="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
+                  <a href="#download" class="bg-yellow-500 hover:bg-yellow-600 text-black px-8 py-3 rounded-full font-bold transition"
+                    >지금 시작하기</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 슬라이드 1 수정 -->
+      <div class="slide absolute inset-0 flex items-center justify-center transition-opacity duration-500 opacity-0">
+        <div class="absolute inset-0 z-0">
+          <img src="images/hero-bg-1.jpg?v=1" alt="포커 게임 배경" class="w-full h-full object-cover opacity-30" />
+        </div>
+        <div class="container mx-auto px-8 py-20 relative z-10">
+          <div class="md:w-[840px] flex flex-col md:flex-row items-center gap-4 md:gap-16 mx-auto">
+            <div class="w-full md:w-[400px] flex items-center justify-center">
+              <img src="images/14.jpg?v=1" alt="포커 게임 이미지" class="w-[200px] md:w-[400px] rounded-xl shadow-2xl" />
+            </div>
+            <div class="flex-auto w-full text-center flex flex-col items-center">
+              <img src="images/logo.png" alt="365포커 로고" class="hidden md:block h-24 md:h-32 mx-auto md:mx-0 mb-8" />
+              <h1 class="text-xl md:text-4xl font-bold mb-6">안전성, 공정성, 고객만족을 <br />최우선으로 하는 365포커</h1>
+              <p class="text-sm md:text-2xl mb-8 text-gray-300">
+                당사는 고객의 개인 정보 보호를 최우선 가치로 두고 이에 걸맞는 보호 시스템을 구축하여 운영중입니다. 또한, RNG(Random Number
+                Generator) 인증을 받아 당사에서 서비스하는 게임에 대하여 인위적 개입 및 조작이 없는 공정한 플레이를 즐길 수 있습니다. 그리고
+                365일 24시간 고객센터를 운영하여 항상 고객의 목소리에 귀를 기울이고 있습니다.
+              </p>
+              <div class="flex flex-col md:flex-row gap-4">
+                <button
+                  onclick="openCertificateModal()"
+                  class="bg-yellow-500 hover:bg-yellow-600 text-black px-8 py-3 rounded-full font-bold transition"
+                >
+                  인증서 보기
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 슬라이드 2 수정 -->
+      <div class="slide absolute inset-0 flex items-center justify-center transition-opacity duration-500 opacity-0">
+        <div class="absolute inset-0 z-0">
+          <img src="images/hero-bg-2.jpg?v=1" alt="포커 게임 플레이" class="w-full h-full object-cover opacity-30" />
+        </div>
+        <div class="container mx-auto px-8 py-20 relative z-10">
+          <div class="md:w-[840px] flex flex-col md:flex-row items-center gap-4 md:gap-10 mx-auto">
+            <!-- 왼쪽 텍스트 -->
+            <div class="flex-auto w-full text-center flex flex-col items-center order-2 md:order-1">
+              <img src="images/logo.png" alt="365포커 로고" class="hidden md:block h-24 md:h-32 mx-auto md:mx-0 mb-8" />
+              <h1 class="text-xl md:text-4xl font-bold mb-6">손끝에서 펼쳐지는 짜릿한 <br />승부의 순간!</h1>
+              <div class="mb-8">
+                <p class="text-sm md:text-xl text-gray-300 break-words">
+                  언제 어디서나 다양한 환경에서 즐길수 있는 실시간 포커<br />
+                  누구나 쉽게 즐길수 있는 직관적인 게임 인터페이스<br />
+                  최대 4개까지 이용가능한 지루할틈이 없는 멀티 플레이<br />
+                  상대방의 패턴을 분석하여 플레이 할수 있는 HUD 통계
+                </p>
+              </div>
+
+              <div class="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
+                <a href="#download" class="bg-yellow-500 hover:bg-yellow-600 text-black px-8 py-3 rounded-full font-bold transition"
+                  >지금 시작하기</a
+                >
+              </div>
+            </div>
+            <!-- 오른쪽 이미지 -->
+            <div class="w-full md:w-[400px] flex items-center justify-center md:justify-start order-1 md:order-2">
+              <img src="images/15.png" alt="포커 게임 이미지" class="w-[200px] md:w-[400px] rounded-xl shadow-2xl" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 슬라이드 3 수정 -->
+      <!-- <div class="slide absolute inset-0 flex items-center justify-center transition-opacity duration-500 opacity-0">
+        <div class="absolute inset-0 z-0">
+          <img src="images/hero-bg-1.jpg?v=1" alt="포커 게임 배경" class="w-full h-full object-cover opacity-30" />
+        </div>
+        <div class="container mx-auto px-8 py-20 relative z-10">
+          <div class="md:w-[840px] flex flex-col md:flex-row items-center gap-4 md:gap-16 mx-auto">
+            <div class="w-full md:w-[400px] flex items-center justify-center">
+              <img src="images/battle_baccarat.jpg?v=1" alt="포커 게임 이미지" class="w-[200px] md:w-[400px] rounded-xl shadow-2xl" />
+            </div>
+            <div class="flex-auto w-full text-center flex flex-col items-center">
+              <img src="images/logo.png" alt="365포커 로고" class="hidden md:block h-24 md:h-32 mx-auto md:mx-0 mb-8" />
+              <h1 class="text-xl md:text-4xl font-bold mb-6">안전성, 공정성, 고객만족을 <br />최우선으로 하는 365포커</h1>
+              <p class="text-sm md:text-2xl mb-8 text-gray-300">
+                당사는 고객의 개인 정보 보호를 최우선 가치로 두고 이에 걸맞는 보호 시스템을 구축하여 운영중입니다. 또한, RNG(Random Number
+                Generator) 인증을 받아 당사에서 서비스하는 게임에 대하여 인위적 개입 및 조작이 없는 공정한 플레이를 즐길 수 있습니다. 그리고
+                365일 24시간 고객센터를 운영하여 항상 고객의 목소리에 귀를 기울이고 있습니다.
+              </p>
+              <div class="flex flex-col md:flex-row gap-4">
+                <button
+                  onclick="openCertificateModal()"
+                  class="bg-yellow-500 hover:bg-yellow-600 text-black px-8 py-3 rounded-full font-bold transition"
+                >
+                  인증서 보기
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- 슬라이드 컨트롤 -->
+      <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-4">
+        <button class="w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100 transition slide-dot active"></button>
+        <button class="w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100 transition slide-dot"></button>
+        <button class="w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100 transition slide-dot"></button>
+      </div>
+    </section>
+
+    <!-- 게임 특징 섹션을 카드 슬라이더 형태로 수정 -->
+    <section id="features" class="py-20 md:py-40 bg-gradient-to-b from-gray-900 to-gray-800">
+      <div class="container mx-auto px-8">
+        <div class="text-center mb-8">
+          <span class="text-pink-500 text-sm uppercase tracking-wider">Smart Features</span>
+          <h2 class="text-lg md:text-3xl font-bold mt-2 mb-4">365포커에서 승부하라!</h2>
+        </div>
+        <div class="flex justify-center mb-12">
+          <img src="images/pocker-img.png" alt="포커 이지" class="max-w-2xl w-full rounded-xl" />
+        </div>
+        <!-- 카드 라이더 -->
+        <div class="relative max-w-6xl mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- 카드 1 -->
+            <div
+              class="bg-gray-800/50 backdrop-blur-sm rounded-2xl overflow-hidden hover:transform hover:scale-105 transition duration-300"
+            >
+              <div class="p-8 text-center">
+                <img src="images/16.png" alt="포커 게임 이미지" class="h-[350px] md:h-[560px] rounded-xl shadow-2xl mx-auto my-10" />
+                <h3 class="text-lg md:text-xl font-bold mb-4">실시간으로 즐기는 정통 포커의 묘미</h3>
+
+                <p class="text-sm md:text-lg text-gray-400 mb-6">
+                  검증된 시스템으로 사용자는 항상 공정하고 안정적인 포커 게임을 즐길수 있습니다.
+                </p>
+              </div>
+            </div>
+
+            <!-- 카드 2 -->
+            <div
+              class="bg-gray-800/50 backdrop-blur-sm rounded-2xl overflow-hidden hover:transform hover:scale-105 transition duration-300"
+            >
+              <div class="p-8 text-center">
+                <img src="images/17.png" alt="포커 게임 이미지" class="h-[350px] md:h-[560px] rounded-xl shadow-2xl mx-auto my-10" />
+                <h3 class="text-lg md:text-xl font-bold mb-4">다채로운 이벤트와 보너스 기회</h3>
+
+                <p class="text-sm md:text-lg text-gray-400 mb-6">
+                  첫가입 3+3 ~ 15+15 더블업<br />
+                  매번 주어지는 추가 10%<br />
+                  매일/주간 미션<br />
+                  핸드 족보 이벤트를 상시 준비하여 특별한 보상의 기회를 제공합니다.
+                </p>
+              </div>
+            </div>
+
+            <!-- 카드 3 -->
+            <div
+              class="bg-gray-800/50 backdrop-blur-sm rounded-2xl overflow-hidden hover:transform hover:scale-105 transition duration-300"
+            >
+              <div class="p-8 text-center">
+                <img src="images/18.png" alt="포커 게임 이미지" class="h-[350px] md:h-[560px] rounded-xl shadow-2xl mx-auto my-10" />
+                <h3 class="text-lg md:text-xl font-bold mb-4">사용자를 위한 커스터마이징 옵션</h3>
+
+                <p class="text-sm md:text-lg text-gray-400 mb-6">
+                  개개인의 취향에 맞추어 커스터마이징 할 수 있는 다양한 설정을 지원합니다.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 새로운 섹션: 주요 특징 -->
+    <section class="py-20 md:py-40 bg-gradient-to-b from-gray-800 to-gray-900 relative">
+      <div class="absolute inset-0 z-0">
+        <img src="images/bg-play2.jpg?v=1" alt="포커 게임 배경" class="w-full h-full object-cover opacity-20" />
+      </div>
+      <div class="container mx-auto px-8 relative z-10">
+        <h2 class="text-lg md:text-3xl font-bold text-center mb-12">다양한 기기에 최적화 되어있는 안전하고 공정 포커 경험</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-gray-700 p-8 rounded-xl">
+            <h3 class="text-lg md:text-xl font-bold mb-4 text-yellow-500">다양한 게임 및 토너먼트 제공</h3>
+            <p class="text-sm md:text-lg text-gray-300">
+              텍사스 홀덤, 토너먼트 등 세계적으로 인기 있는 다양한 포커 게임을 제공합니다. 초보자부터 프로까지 모두를 위한 게임 모드와
+              토너먼트를 통해 실력을 겨루고 높은 보상을 획득할 수 있습니다.
+            </p>
+          </div>
+          <div class="bg-gray-700 p-8 rounded-xl">
+            <h3 class="text-lg md:text-xl font-bold mb-4 text-yellow-500">믿을 수 있는 보안 시스템</h3>
+            <p class="text-sm md:text-lg text-gray-300">
+              사용자의 계정과 자금을 철저히 보호하며, 안전하고 간편한 입출금 절차를 갖추고 있습니다. 24시간 지원팀이 있어 언제든 문의 사항에
+              빠르게 응답해드립니다.
+            </p>
+          </div>
+          <div class="bg-gray-700 p-8 rounded-xl">
+            <h3 class="text-lg md:text-xl font-bold mb-4 text-yellow-500">다양한 기기에서 최적화된 플랫폼</h3>
+            <p class="text-sm md:text-lg text-gray-300">
+              Windows, Android, iOS 등 모든 주요 기기에서 안정적인 플레이가 가능하도록 설계되어 언제 어디서든 원활한 게임 환경을 공합니다.
+            </p>
+          </div>
+        </div>
+        <div class="flex justify-center gap-20 max-w-4xl mx-auto mt-20">
+          <div class="flex justify-center items-center">
+            <img src="images/logo_rng.png" alt="RNG Logo" class="h-16 w-auto" />
+          </div>
+          <div class="flex justify-center items-center">
+            <img src="images/logo_itech.png" alt="iTech Logo" class="h-16 w-auto" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 파트너 모집 섹션 수정 -->
+    <section id="partner" class="py-20 md:py-40 bg-gradient-to-b from-gray-900 to-gray-800">
+      <div class="container mx-auto px-8">
+        <h2 class="text-lg md:text-3xl font-bold text-center mb-12">365포커 협력 파트너 모집</h2>
+        <div class="grid md:grid-cols-2 gap-8 items-center max-w-6xl mx-auto">
+          <!-- 이미지 추가 -->
+          <div class="order-2 md:order-1">
+            <img src="images/draw-partner.png" alt="파트너십 프로그램" class="w-full max-w-lg mx-auto" />
+          </div>
+          <!-- 텍스트 컨텐 -->
+          <div class="bg-gray-700 p-8 rounded-xl order-1 md:order-2">
+            <p class="text-sm md:text-lg text-gray-300 mb-6">
+
+              본사의 직영 파트너모집중 입니다.<br/>
+              직영파트너는 2025년 4월1일까지만 모집하며<br/>
+              4월1일 이후에는 각종 매체를 통해 홍보를 <br/>
+              진행하고 있는 파트너에게 문의주셔야 합니다.<br/>
+              파트너 문의는 아래 버튼을 눌러주세요.
+            </p>
+            <div class="text-center">
+              <a
+                href="https://t.me/PP365KK"
+                target="_blank"
+                class="bg-yellow-500 hover:bg-yellow-600 text-black px-8 py-3 rounded-full font-bold transition inline-block"
+              >
+                파트너 문의하기
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 다운로드 섹션 수정 -->
+    <section id="download" class="py-20 md:py-40 bg-gradient-to-b from-gray-800 to-gray-900 relative">
+      <div class="absolute inset-0 z-0">
+        <img src="images/download-bg.jpg?v=1" alt="다운로드 배경" class="w-full h-full object-cover opacity-20" />
+      </div>
+      <div class="container mx-auto px-8 text-center relative z-10">
+        <h2 class="text-lg md:text-3xl font-bold mb-4">365포커 다운로드</h2>
+        <p class="text-sm md:text-lg text-gray-300 mb-8">365포커를 경험해 보세요<br />현재버전 : Ver.1.28</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-12">
+          <!-- 윈도우 다운로드 -->
+          <div class="bg-gray-800 p-6 rounded-xl">
+            <img src="images/icon_windows.png" alt="Windows" class="w-16 h-16 mx-auto mb-4" />
+            <h3 class="text-xl font-bold mb-4">컴퓨터로 이용하실때</h3>
+            <a href="https://dev.365pkr.com/build/365Poker.1.28.2025071102.zip">
+              <button class="bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-2 rounded-full font-bold transition w-full mb-2">
+                다운로드
+              </button>
+            </a>
+            <button
+              onclick="openInstallModal('windows')"
+              class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-full font-bold transition w-full mb-2"
+            >
+              설치방법
+            </button>
+            <a href="https://download.teamviewer.com/download/TeamViewerQS_x64.exe" target="_blank">
+              <button class="bg-gray-600 hover:bg-gray-700 text-white px-6 py-2 rounded-full font-bold transition w-full">
+                Team viewer 다운로드
+              </button>
+            </a>
+          </div>
+
+          <!-- 안드로이드 다운로드 -->
+          <div class="bg-gray-800 p-6 rounded-xl">
+            <img src="images/icon_android.png" alt="Android" class="w-16 h-16 mx-auto mb-4" />
+            <h3 class="text-xl font-bold mb-4">안드로이드 다운로드</h3>
+            <a href="https://dev.365pkr.com/build/365Poker.1.28.2025071102.apk">
+              <button class="bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-2 rounded-full font-bold transition w-full mb-2">
+                다운로드
+              </button>
+            </a>
+            <button
+              onclick="openInstallModal('android')"
+              class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-full font-bold transition w-full mb-2"
+            >
+              설치방법
+            </button>
+            <!-- <a href="https://download.teamviewer.com/download/TeamViewerQS.apk" target="_blank">
+              <button class="bg-gray-600 hover:bg-gray-700 text-white px-6 py-2 rounded-full font-bold transition w-full">
+                Team viewer 다운로드
+              </button>
+            </a> -->
+          </div>
+
+          <!-- iOS 다운로드 -->
+          <div class="bg-gray-800 p-6 rounded-xl">
+            <img src="images/icon_appstore.png" alt="iOS" class="w-16 h-16 mx-auto mb-4" />
+            <h3 class="text-xl font-bold mb-4">iOS 다운로드</h3>
+            <a href="https://365pkr.dlios.cc/">
+              <button class="bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-2 rounded-full font-bold transition w-full mb-2">
+                다운로드
+              </button>
+            </a>
+            <button
+              onclick="openInstallModal('ios')"
+              class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-full font-bold transition w-full mb-2"
+            >
+              설치방법
+            </button>
+            <!-- <a href="https://apps.apple.com/us/app/teamviewer-quicksupport/id661649585" target="_blank">
+              <button class="bg-gray-600 hover:bg-gray-700 text-white px-6 py-2 rounded-full font-bold transition w-full">
+                Team viewer 다운로드
+              </button>
+            </a> -->
+          </div>
+        </div>
+        <!-- 팀뷰어/텔레그램 안내 -->
+        <p class="text-gray-400 relative z-10 text-center mt-12">
+          다운로드가 어려우신분은
+          <a
+            href="https://www.teamviewer.com/ko/download/windows/"
+            target="_blank"
+            class="text-yellow-500 hover:text-yellow-600 transition font-bold underline relative z-20"
+            >Team viewer</a
+          >
+          설치후
+          <a
+            href="https://t.me/PP365KK"
+            target="_blank"
+            class="text-yellow-500 hover:text-yellow-600 transition font-bold underline relative z-20"
+            >텔레그램 고객센터</a
+          >
+          로 문의바랍니다.
+        </p>
+      </div>
+    </section>
+
+    <!-- 푸터 수정 -->
+    <footer class="bg-gradient-to-b from-gray-900 to-gray-950 py-10 border-t border-gray-800">
+      <div class="container mx-auto px-8">
+        <!-- 인증서 이미지 섹션 추가 -->
+        <!-- <div class="grid grid-cols-3 md:grid-cols-3 gap-4 max-w-4xl mx-auto mb-8">
+          <div class="flex justify-center items-center">
+            <img src="images/certi02.png" alt="인증서 2" class="h-10 md:h-16 opacity-70 hover:opacity-100 transition" />
+          </div>
+          <div class="flex justify-center items-center">
+            <img src="images/certi03.png" alt="인증서 3" class="h-10 md:h-16 opacity-70 hover:opacity-100 transition" />
+          </div>
+          <div class="flex justify-center items-center">
+            <img src="images/certi01.png" alt="인증서 1" class="h-10 md:h-16 opacity-70 hover:opacity-100 transition" />
+          </div>
+        </div> -->
+
+        <div class="text-center text-gray-400">
+          <p class="mb-4">© 2024 365포커. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 슬라이드 JavaScript 추가 -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const slides = document.querySelectorAll(".slide")
+        const dots = document.querySelectorAll(".slide-dot")
+        let currentSlide = 0
+
+        function showSlide(index) {
+          slides.forEach((slide) => (slide.style.opacity = "0"))
+          dots.forEach((dot) => dot.classList.remove("active", "opacity-100"))
+
+          slides[index].style.opacity = "1"
+          dots[index].classList.add("active", "opacity-100")
+        }
+
+        // 자동 슬라이드
+        setInterval(() => {
+          currentSlide = (currentSlide + 1) % slides.length
+          showSlide(currentSlide)
+        }, 5000)
+
+        // 도트 클릭 이벤트
+        dots.forEach((dot, index) => {
+          dot.addEventListener("click", () => {
+            currentSlide = index
+            showSlide(currentSlide)
+          })
+        })
+
+        // 모바일 메뉴 토글 기능 추가
+        const mobileMenuButton = document.getElementById("mobileMenuButton")
+        const mobileMenu = document.getElementById("mobileMenu")
+
+        mobileMenuButton.addEventListener("click", function () {
+          // hidden 클래스를 토글하여 메뉴를 보이거나 숨김
+          mobileMenu.classList.toggle("hidden")
+
+          // 메뉴가 열릴 때 애니메이션 효과 추가 (선택사항)
+          if (!mobileMenu.classList.contains("hidden")) {
+            mobileMenu.style.animation = "slideDown 0.3s ease-out"
+          }
+        })
+
+        // 메뉴 항목 클릭시 자동으로 메뉴 닫기
+        const menuItems = mobileMenu.getElementsByTagName("a")
+        Array.from(menuItems).forEach((item) => {
+          item.addEventListener("click", () => {
+            mobileMenu.classList.add("hidden")
+          })
+        })
+      })
+
+      // 애니메이션 키프레임 추가 (선택사항)
+      const style = document.createElement("style")
+      style.textContent = `
+        @keyframes slideDown {
+          from {
+            opacity: 0;
+            transform: translateY(-10px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+      `
+      document.head.appendChild(style)
+    </script>
+
+    <!-- 알림 모달 추가 (body 태그 안, 다른 모달들과 함께 배치) -->
+    <div id="alertModal" class="fixed inset-0 bg-black/30 backdrop-blur-sm hidden items-center justify-center z-50">
+      <div class="bg-gray-800/90 backdrop-blur-sm rounded-xl p-6 max-w-md w-full mx-4 relative">
+        <div class="text-center">
+          <h3 class="text-xl font-bold mb-4">알림</h3>
+          <p class="text-gray-300 mb-6">텔레그램 고객센터로 문의바랍니다</p>
+          <button
+            onclick="closeAlertModal()"
+            class="bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-2 rounded-full font-bold transition"
+          >
+            확인
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function showIosDownloadMessage() {
+        const modal = document.getElementById("alertModal")
+        modal.classList.remove("hidden")
+        modal.classList.add("flex")
+        document.body.style.overflow = "hidden"
+      }
+
+      function closeAlertModal() {
+        const modal = document.getElementById("alertModal")
+        modal.classList.add("hidden")
+        modal.classList.remove("flex")
+        document.body.style.overflow = "auto"
+      }
+      // 알림 모달 외부 클릭시 닫기
+      document.getElementById("alertModal").addEventListener("click", function (e) {
+        if (e.target === this) {
+          closeAlertModal()
+        }
+      })
+
+      // ESC 키로 알림 모달 닫기 (기존 keydown 이벤트 리스너 수정)
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") {
+          closeInstallModal()
+          closeCertificateModal()
+          closeAlertModal()
+        }
+      })
+    </script>
+
+    <!-- 모달 수정 -->
+    <div id="installModal" class="fixed inset-0 bg-black/30 backdrop-blur-sm hidden items-start justify-center z-50 overflow-y-auto">
+      <div class="bg-gray-800/90 backdrop-blur-sm rounded-xl p-4 md:p-8 max-w-4xl w-full mx-4 my-4 md:my-8 relative">
+        <button onclick="closeInstallModal()" class="sticky top-4 float-right text-gray-400 hover:text-white z-50">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+
+        <!-- Windows 설치 가이드 -->
+        <div id="windowsGuide" class="hidden">
+          <h3 class="text-2xl font-bold mb-6 text-center">Windows PC 설치 가이드</h3>
+
+          <!-- 이미지 슬라이더 -->
+          <div class="relative mb-8">
+            <div class="overflow-hidden">
+              <div class="windows-slides flex transition-transform duration-300">
+                <div class="min-w-full p-4 md:p-20">
+                  <img
+                    src="images/install/pc/1.png?v=2"
+                    alt="Windows 설치 단계 1"
+                    class="w-full h-[400px] md:h-[600px] object-contain rounded-lg"
+                  />
+                  <p class="text-center mt-4 md:mt-10 text-gray-300 bg-gray-700/50 p-4 rounded-xl text-md md:text-lg">
+                    1.다운로드를 클릭합니다
+                  </p>
+                </div>
+                <div class="min-w-full p-4 md:p-20">
+                  <img
+                    src="images/install/pc/2.png?v=2"
+                    alt="Windows 설치 단계 2"
+                    class="w-full h-[400px] md:h-[600px] object-contain rounded-lg"
+                  />
+                  <p class="text-center mt-4 md:mt-10 text-gray-300 bg-gray-700/50 p-4 rounded-xl text-md md:text-lg">
+                    2.바이러스가 있다고 감지될수도 있습니다
+                  </p>
+                </div>
+                <div class="min-w-full p-4 md:p-20">
+                  <img
+                    src="images/install/pc/3.png?v=2"
+                    alt="Windows 설치 단계 3"
+                    class="w-full h-[400px] md:h-[600px] object-contain rounded-lg"
+                  />
+                  <p class="text-center mt-4 md:mt-10 text-gray-300 bg-gray-700/50 p-4 rounded-xl text-md md:text-lg">
+                    3.오른쪽 아래 팝업으로 뜨는 윈도우 보안창에 진입합니다
+                  </p>
+                </div>
+                <div class="min-w-full p-4 md:p-20">
+                  <img
+                    src="images/install/pc/4.png?v=2"
+                    alt="Windows 설치 단계 4"
+                    class="w-full h-[400px] md:h-[600px] object-contain rounded-lg"
+                  />
+                  <p class="text-center mt-4 md:mt-10 text-gray-300 bg-gray-700/50 p-4 rounded-xl text-md md:text-lg">
+                    4.실시간 보호기능이 켜져있다면 꺼주세요
+                  </p>
+                </div>
+                <div class="min-w-full p-4 md:p-20">
+                  <img
+                    src="images/install/pc/5.png?v=2"
+                    alt="Windows 설치 단계 5"
+                    class="w-full h-[400px] md:h-[600px] object-contain rounded-lg"
+                  />
+                  <p class="text-center mt-4 md:mt-10 text-gray-300 bg-gray-700/50 p-4 rounded-xl text-md md:text-lg">
+                    5.다시 처음으로 돌아가 다운로드후 다운로드 파일을 바탕화면 폴더에 압축을 풀어주세요
+                  </p>
+                </div>
+                <div class="min-w-full p-4 md:p-20">
+                  <img
+                    src="images/install/pc/6.png?v=2"
+                    alt="Windows 설치 단계 6"
+                    class="w-full h-[400px] md:h-[600px] object-contain rounded-lg"
+                  />
+                  <p class="text-center mt-4 md:mt-10 text-gray-300 bg-gray-700/50 p-4 rounded-xl text-md md:text-lg">
+                    6.게임을 실행 하여 PC 보호창이 나오면 추가정보를 눌러주세요
+                  </p>
+                </div>
+                <div class="min-w-full p-4 md:p-20">
+                  <img
+                    src="images/install/pc/7.png?v=2"
+                    alt="Windows 설치 단계 7"
+                    class="w-full h-[400px] md:h-[600px] object-contain rounded-lg"
+                  />
+                  <p class="text-center mt-4 md:mt-10 text-gray-300 bg-gray-700/50 p-4 rounded-xl text-md md:text-lg">
+                    7.실행을 누릅니다.
+                  </p>
+                </div>
+                <div class="min-w-full p-4 md:p-20">
+                  <img
+                    src="images/install/pc/8.png?v=2"
+                    alt="Windows 설치 단계 7"
+                    class="w-full h-[400px] md:h-[600px] object-contain rounded-lg"
+                  />
+                  <p class="text-center mt-4 md:mt-10 text-gray-300 bg-gray-700/50 p-4 rounded-xl text-md md:text-lg">
+                    8.폴더에서 아이콘을 밖으로 이동하게 되면 실행이 되지 않으니 주의해주시기 바랍니다.
+                  </p>
+                </div>
+                <div class="min-w-full p-4 md:p-20">
+                  <img
+                    src="images/install/pc/9.png?v=2"
+                    alt="Windows 설치 단계 7"
+                    class="w-full h-[400px] md:h-[600px] object-contain rounded-lg"
+                  />
+                  <p class="text-center mt-4 md:mt-10 text-gray-300 bg-gray-700/50 p-4 rounded-xl text-md md:text-lg">
+                    9. 설치가 어려우신분은 아래의 Team viewer 다운로드를 누르시거나 Team viewer Quick Support 검색하여 설치한후 표시되는
+                    귀하의 ID와 1회용 비밀번호를 365포커 텔레그램 고객센터로 알려주시면 설치를 도와드리겠습니다.
+                  </p>
+                </div>
+                <div class="min-w-full p-4 md:p-20">
+                  <img
+                    src="images/install/pc/10.png?v=2"
+                    alt="Windows 설치 단계 7"
+                    class="w-full h-[400px] md:h-[600px] object-contain rounded-lg"
+                  />
+                  <p class="text-center mt-4 md:mt-10 text-gray-300 bg-gray-700/50 p-4 rounded-xl text-md md:text-lg">
+                    10. 설치가 어려우신분은 아래의 Team viewer 다운로드를 누르시거나 Team viewer Quick Support 검색하여 설치한후 표시되는
+                    귀하의 ID와 1회용 비밀번호를 365포커 텔레그램 고객센터로 알려주시면 설치를 도와드리겠습니다.
+                  </p>
+                </div>
+                
+              </div>
+            </div>
+            <!-- 슬라이더 컨트롤 -->
+            <button
+              class="absolute left-0 top-1/2 -translate-y-1/2 bg-black/50 p-2 rounded-full text-white hover:bg-black/75"
+              onclick="moveSlide('windows', -1)"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+            <button
+              class="absolute right-0 top-1/2 -translate-y-1/2 bg-black/50 p-2 rounded-full text-white hover:bg-black/75"
+              onclick="moveSlide('windows', 1)"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
+
+          <div class="bg-gray-700/50 p-6 rounded-xl">
+            <h4 class="font-bold text-lg mb-4">설치 시 주의사항</h4>
+            <ol class="list-decimal list-inside space-y-2 text-gray-300">
+              <li>다운로드를 클릭합니다</li>
+              <li>바이러스가 있다고 감지될수도 있습니다</li>
+              <li>오른쪽 아래 팝업으로 뜨는 윈도우 보안창에 진입합니다</li>
+              <li>실시간 보호기능이 켜져있다면 꺼주세요</li>
+              <li>다시 처음으로 돌아가 다운로드후 다운로드 파일을 바탕화면 폴더에 압축을 풀어주세요</li>
+              <li>게임을 실행 하여 PC 보호창이 나오면 추가정보를 눌러주세요</li>
+              <li>실행을 누릅니다.</li>
+              <li>폴더에서 아이콘을 밖으로 이동하게 되면 실행이 되지 않으니 주의해주시기 바랍니다.</li>
+              <li class="text-yellow-500">
+                문제가 발생하면 즉시 텔레그램 고객센터로 문의해주세요. Team viewer를 통해 원격으로 도와드리겠습니다.
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- Android 설치 가이드 -->
+        <div id="androidGuide" class="hidden">
+          <h3 class="text-2xl font-bold mb-6 text-center">Android 설치 가이드</h3>
+
+          <!-- 이미지 슬라이더 -->
+          <div class="relative mb-8">
+            <div class="overflow-hidden">
+              <div class="android-slides flex transition-transform duration-300">
+                <div class="min-w-full p-4 md:p-20">
+                  <img
+                    src="images/install/android/1.jpg?v=1"
+                    alt="Android 설치 단계 1"
+                    class="w-full h-[400px] md:h-[600px] object-contain rounded-lg"
+                  />
+                  <p class="text-center mt-4 md:mt-10 text-gray-300 bg-gray-700/50 p-4 rounded-xl text-md md:text-lg">
+                    1. 365포커 홈페이지에서 안드로이드 다운로드를 눌러 다운로드를 실행합니다.
+                  </p>
+                </div>
+                <div class="min-w-full p-4 md:p-20">
+                  <img
+                    src="images/install/android/2.jpg?v=1"
+                    alt="Android 설치 단계 2"
+                    class="w-full h-[400px] md:h-[600px] object-contain rounded-lg"
+                  />
+                  <p class="text-center mt-4 md:mt-10 text-gray-300 bg-gray-700/50 p-4 rounded-xl text-md md:text-lg">
+                    2. 다운로드가 완료되면 apk 파일을 눌러 실행합니다.
+                  </p>
+                </div>
+                <div class="min-w-full p-4 md:p-20">
+                  <img
+                    src="images/install/android/3.jpg?v=1"
+                    alt="Android 설치 단계 3"
+                    class="w-full h-[400px] md:h-[600px] object-contain rounded-lg"
+                  />
+                  <p class="text-center mt-4 md:mt-10 text-gray-300 bg-gray-700/50 p-4 rounded-xl text-md md:text-lg">
+                    3. 출처를 알 수 없는 앱 설치의 설정에서 권한허용을 합니다.
+                  </p>
+                </div>
+                <div class="min-w-full p-4 md:p-20">
+                  <img
+                    src="images/install/android/4.jpg?v=1"
+                    alt="Android 설치 단계 4"
+                    class="w-full h-[400px] md:h-[600px] object-contain rounded-lg"
+                  />
+                  <p class="text-center mt-4 md:mt-10 text-gray-300 bg-gray-700/50 p-4 rounded-xl text-md md:text-lg">
+                    4. 출처를 알 수 없는 앱 설치의 설정에서 권한허용을 합니다.
+                  </p>
+                </div>
+                <div class="min-w-full p-4 md:p-20">
+                  <img
+                    src="images/install/android/5.jpg?v=1"
+                    alt="Android 설치 단계 5"
+                    class="w-full h-[400px] md:h-[600px] object-contain rounded-lg"
+                  />
+                  <p class="text-center mt-4 md:mt-10 text-gray-300 bg-gray-700/50 p-4 rounded-xl text-md md:text-lg">
+                    5. 무시하고 설치를 눌러 설치를 완료합니다.
+                  </p>
+                </div>
+                <div class="min-w-full p-4 md:p-20">
+                  <img
+                    src="images/install/android/6.jpg?v=1"
+                    alt="Android 설치 단계 6"
+                    class="w-full h-[400px] md:h-[600px] object-contain rounded-lg"
+                  />
+                  <p class="text-center mt-4 md:mt-10 text-gray-300 bg-gray-700/50 p-4 rounded-xl text-md md:text-lg">
+                    6. 설치가 어려우신분은 아래의 Team viewer 다운로드를 누르시거나, Play 스토어에서 Team viewer Quick Support 를 설치한후
+                    표시되는 귀하의 ID를 365포커 텔레그램 고객센터로 알려주시면 설치를 도와드리겠습니다.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- 슬라이더 컨트롤 -->
+            <button
+              class="absolute left-0 top-1/2 -translate-y-1/2 bg-black/50 p-2 rounded-full text-white hover:bg-black/75"
+              onclick="moveSlide('android', -1)"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+            <button
+              class="absolute right-0 top-1/2 -translate-y-1/2 bg-black/50 p-2 rounded-full text-white hover:bg-black/75"
+              onclick="moveSlide('android', 1)"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
+
+          <div class="bg-gray-700/50 p-6 rounded-xl">
+            <h4 class="font-bold text-lg mb-4">설치 시 주의사항</h4>
+            <ul class="list-disc list-inside space-y-2 text-gray-300">
+              <li>Android 6.0 이상 버전에서 설치 가능합니다.</li>
+              <li>설치 전 충분한 저장공간을 확보해주세요.</li>
+              <li>알 수 없는 출처 설치 허용은 설치 후 다시 비활성화하는 것을 권장합니다.</li>
+              <li>최신 버전의 Android 시스템을 사용하시는 것을 권장합니다.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- iOS 설치 가이드 -->
+        <div id="iosGuide" class="hidden">
+          <h3 class="text-2xl font-bold mb-6 text-center">iOS 설치 가이드</h3>
+
+          <!-- 이미지 슬라이더 -->
+          <div class="relative mb-8">
+            <div class="overflow-hidden">
+              <div class="ios-slides flex transition-transform duration-300">
+                <div class="min-w-full p-4 md:p-20">
+                  <img
+                    src="images/install/ios/1.jpg?v=1"
+                    alt="iOS 설치 단계 1"
+                    class="w-full h-[400px] md:h-[600px] object-contain rounded-lg"
+                  />
+                  <p class="text-center mt-4 md:mt-10 text-gray-300 bg-gray-700/50 p-4 rounded-xl text-md md:text-lg">
+                    1. iOS 다운로드링크를 사파리에 복사하여 실행한후 다운로드를 누른다
+                  </p>
+                </div>
+                <div class="min-w-full p-4 md:p-20">
+                  <img
+                    src="images/install/ios/2.jpg?v=1"
+                    alt="iOS 설치 단계 2"
+                    class="w-full h-[400px] md:h-[600px] object-contain rounded-lg"
+                  />
+                  <p class="text-center mt-4 md:mt-10 text-gray-300 bg-gray-700/50 p-4 rounded-xl text-md md:text-lg">
+                    2. 프로파일을 다운로드를 허용 합니다.
+                  </p>
+                </div>
+                <div class="min-w-full p-4 md:p-20">
+                  <img
+                    src="images/install/ios/3.jpg?v=1"
+                    alt="iOS 설치 단계 3"
+                    class="w-full h-[400px] md:h-[600px] object-contain rounded-lg"
+                  />
+                  <p class="text-center mt-4 md:mt-10 text-gray-300 bg-gray-700/50 p-4 rounded-xl text-md md:text-lg">
+                    3.설정-일반-VPN 및 기기관리를 누릅니다.
+                  </p>
+                </div>
+                <div class="min-w-full p-4 md:p-20">
+                  <img
+                    src="images/install/ios/4.jpg?v=1"
+                    alt="iOS 설치 단계 4"
+                    class="w-full h-[400px] md:h-[600px] object-contain rounded-lg"
+                  />
+                  <p class="text-center mt-4 md:mt-10 text-gray-300 bg-gray-700/50 p-4 rounded-xl text-md md:text-lg">
+                    4.365Poker-install 을 클릭합니다.
+                  </p>
+                </div>
+                <div class="min-w-full p-4 md:p-20">
+                  <img
+                    src="images/install/ios/5.jpg?v=1"
+                    alt="iOS 설치 단계 5"
+                    class="w-full h-[400px] md:h-[600px] object-contain rounded-lg"
+                  />
+                  <p class="text-center mt-4 md:mt-10 text-gray-300 bg-gray-700/50 p-4 rounded-xl text-md md:text-lg">
+                    5.프로파일을 설치 합니다.
+                  </p>
+                </div>
+                <div class="min-w-full p-4 md:p-20">
+                  <img
+                    src="images/install/ios/6.jpg?v=1"
+                    alt="iOS 설치 단계 6"
+                    class="w-full h-[400px] md:h-[600px] object-contain rounded-lg"
+                  />
+                  <p class="text-center mt-4 md:mt-10 text-gray-300 bg-gray-700/50 p-4 rounded-xl text-md md:text-lg">
+                    6. iTunes 에서 페이지 열기를 누릅니다.
+                  </p>
+                </div>
+                <div class="min-w-full p-4 md:p-20">
+                  <img
+                    src="images/install/ios/7.jpg?v=1"
+                    alt="iOS 설치 단계 7"
+                    class="w-full h-[400px] md:h-[600px] object-contain rounded-lg"
+                  />
+                  <p class="text-center mt-4 md:mt-10 text-gray-300 bg-gray-700/50 p-4 rounded-xl text-md md:text-lg">
+                    7. 설정-개인정보 보호 및 보안-맨아래 개발자모드를 켜고 재시동합니다. <br>
+                    (차단모드가 켜져 있다면 차단모드를 끄셔야 합니다.)
+
+                  </p>
+                </div>
+                <div class="min-w-full p-4 md:p-20">
+                  <img
+                    src="images/install/ios/8.jpg?v=1"
+                    alt="iOS 설치 단계 8"
+                    class="w-full h-[400px] md:h-[600px] object-contain rounded-lg"
+                  />
+                  <p class="text-center mt-4 md:mt-10 text-gray-300 bg-gray-700/50 p-4 rounded-xl text-md md:text-lg">
+                    8.365Poker 를 설치합니다.
+                  </p>
+                </div>
+                <div class="min-w-full p-4 md:p-20">
+                  <img
+                    src="images/install/ios/9.jpg?v=1"
+                    alt="iOS 설치 단계 9"
+                    class="w-full h-[400px] md:h-[600px] object-contain rounded-lg"
+                  />
+                  <p class="text-center mt-4 md:mt-10 text-gray-300 bg-gray-700/50 p-4 rounded-xl text-md md:text-lg">
+                    9.정상적으로 설치가 된 모습입니다. (해당작업은 약5분가량 소요됩니다.)
+                  </p>
+                </div>
+                <!-- <div class="min-w-full p-4 md:p-20">
+                  <img
+                    src="images/install/ios/10.jpg?v=1"
+                    alt="iOS 설치 단계 10"
+                    class="w-full h-[400px] md:h-[600px] object-contain rounded-lg"
+                  />
+                  <p class="text-center mt-4 md:mt-10 text-gray-300 bg-gray-700/50 p-4 rounded-xl text-md md:text-lg">
+                    10. iOS 버전에 따라 설치방법이 상이할수 있으니 설치가 어려우신분은 아래의 Team viewer 다운로드를 누르시거나 앱스토어에서
+                    Team viewer Quick Support 를 설치한후 표시되는 귀하의 ID를 365포커 텔레그램 고객센터로 알려주시면 설치를
+                    도와드리겠습니다.
+                  </p>
+                </div>
+                <div class="min-w-full p-4 md:p-20">
+                  <img
+                    src="images/install/ios/11.jpg?v=1"
+                    alt="iOS 설치 단계 11"
+                    class="w-full h-[400px] md:h-[600px] object-contain rounded-lg"
+                  />
+                  <p class="text-center mt-4 md:mt-10 text-gray-300 bg-gray-700/50 p-4 rounded-xl text-md md:text-lg">
+                    11. iOS 버전에 따라 설치방법이 상이할수 있으니 설치가 어려우신분은 아래의 Team viewer 다운로드를 누르시거나 앱스토어에서
+                    Team viewer Quick Support 를 설치한후 표시되는 귀하의 ID를 365포커 텔레그램 고객센터로 알려주시면 설치를
+                    도와드리겠습니다.
+                  </p>
+                </div> -->
+              </div>
+            </div>
+            <!-- 슬라이더 컨트롤 -->
+            <button
+              class="absolute left-0 top-1/2 -translate-y-1/2 bg-black/50 p-2 rounded-full text-white hover:bg-black/75"
+              onclick="moveSlide('ios', -1)"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+            <button
+              class="absolute right-0 top-1/2 -translate-y-1/2 bg-black/50 p-2 rounded-full text-white hover:bg-black/75"
+              onclick="moveSlide('ios', 1)"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
+
+          <div class="bg-gray-700/50 p-6 rounded-xl">
+            <h4 class="font-bold text-lg mb-4">설치 시 주의사항</h4>
+            <ul class="list-disc list-inside space-y-2 text-gray-300">
+              <li>iOS 12.0 이상 버전에서 설치 가능합니다.</li>
+              <li>설치 전 충분한 저장공간을 확보해주세요.</li>
+              <li>개발자 모드 활성화 후 반드시 기기를 재시동해야 합니다.</li>
+              <li>차단 모드가 활성화되어 있다면 반드시 비활성화해야 합니다.</li>
+              <li>설치 과정에서 약 5분 정도의 시간이 소요됩니다.</li>
+              <li>설치 중 문제가 발생하면 즉시 텔레그램 고객센터로 문의해주세요.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 인증서 모달 추가 (body 태그 안, 기존 모달 위에 배치) -->
+    <div id="certificateModal" class="fixed inset-0 bg-black/30 backdrop-blur-sm hidden items-center justify-center z-50">
+      <div class="bg-gray-800/90 backdrop-blur-sm rounded-xl p-4 md:p-8 max-w-4xl w-full mx-4 relative">
+        <button onclick="closeCertificateModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+
+        <div class="mt-4">
+          <img src="images/doc_itech.jpeg" alt="인증서" class="w-full h-auto rounded-lg" style="max-height: 80vh; object-fit: contain" />
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript 수정 -->
+    <script>
+      // 슬라이드 관련 변수
+      const slideStates = {
+        windows: 0,
+        android: 0,
+        ios: 0,
+      }
+
+      function moveSlide(type, direction) {
+        const slides = document.querySelector(`.${type}-slides`)
+        const totalSlides = slides.children.length
+
+        slideStates[type] = (slideStates[type] + direction + totalSlides) % totalSlides
+
+        slides.style.transform = `translateX(-${slideStates[type] * 100}%)`
+      }
+
+      function openInstallModal(type) {
+        const modal = document.getElementById("installModal")
+        const guides = ["windowsGuide", "androidGuide", "iosGuide"]
+
+        guides.forEach((guide) => {
+          document.getElementById(guide).classList.add("hidden")
+        })
+
+        document.getElementById(`${type}Guide`).classList.remove("hidden")
+
+        // 슬라이드 초기화
+        slideStates[type] = 0
+        const slides = document.querySelector(`.${type}-slides`)
+        if (slides) {
+          slides.style.transform = `translateX(0)`
+        }
+
+        modal.classList.remove("hidden")
+        modal.classList.add("flex")
+
+        // 부모 창 스크롤 방지
+        document.body.style.overflow = "hidden"
+      }
+
+      function closeInstallModal() {
+        const modal = document.getElementById("installModal")
+        modal.classList.add("hidden")
+        modal.classList.remove("flex")
+
+        // 부모 창 스크롤 복원
+        document.body.style.overflow = "auto"
+      }
+
+      // 모달 외부 클릭시 닫기
+      document.getElementById("installModal").addEventListener("click", function (e) {
+        if (e.target === this) {
+          closeInstallModal()
+        }
+      })
+
+      // ESC 키로 모달 닫기
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") {
+          closeInstallModal()
+        }
+      })
+
+      function openCertificateModal() {
+        const modal = document.getElementById("certificateModal")
+        modal.classList.remove("hidden")
+        modal.classList.add("flex")
+        document.body.style.overflow = "hidden"
+      }
+
+      function closeCertificateModal() {
+        const modal = document.getElementById("certificateModal")
+        modal.classList.add("hidden")
+        modal.classList.remove("flex")
+        document.body.style.overflow = "auto"
+      }
+
+      // 인증서 모달 외부 클릭시 닫기
+      document.getElementById("certificateModal").addEventListener("click", function (e) {
+        if (e.target === this) {
+          closeCertificateModal()
+        }
+      })
+
+      // ESC 키로 인증서 모달 닫기
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") {
+          closeCertificateModal()
+        }
+      })
+    </script>
+
+    <!-- 공지사항 팝업 추가 -->
+    <div id="noticePopup" class="fixed inset-0 bg-black/50 backdrop-blur-sm hidden items-center justify-center z-[9999]">
+      <div class="bg-gray-800 rounded-xl p-6 max-w-md w-full mx-4 relative">
+        <div class="text-center">
+          <h3 class="text-xl font-bold mb-4 text-yellow-500">공지사항</h3>
+          <p class="text-white text-lg mb-6">
+            1월23일부로 입금계좌 전체변경되었으니<br/> 입금계좌 확인후 입금바랍니다<br/>
+            <a href="https://t.me/PP365KK" target="_blank" class="text-yellow-500 font-bold hover:text-yellow-400 transition">@PP365KK</a>
+          </p>
+          <div class="flex items-center justify-center gap-4 flex-wrap">
+            <label class="flex items-center gap-2 text-gray-300">
+              <input type="checkbox" id="hideNoticeToday" class="w-4 h-4">
+              <span>오늘 하루 보지 않기</span>
+            </label>
+            <button onclick="closeNoticePopup()" class="bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-2 rounded-full font-bold transition">
+              확인
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript 코드 추가 -->
+    <script>
+      // 페이지 로드 시 팝업 표시
+      document.addEventListener('DOMContentLoaded', function() {
+        if (!getCookie('noticeHide')) {
+          //document.getElementById('noticePopup').classList.remove('hidden');
+          //document.getElementById('noticePopup').classList.add('flex');
+        }
+      });
+
+      // 팝업 닫기
+      function closeNoticePopup() {
+        if (document.getElementById('hideNoticeToday').checked) {
+          // 24시간 동안 유효한 쿠키 설정
+          setCookie('noticeHide', 'true', 24);
+        }
+        document.getElementById('noticePopup').classList.add('hidden');
+        document.getElementById('noticePopup').classList.remove('flex');
+      }
+
+      // 쿠키 설정 함수
+      function setCookie(name, value, hours) {
+        let expires = '';
+        if (hours) {
+          const date = new Date();
+          date.setTime(date.getTime() + (hours * 60 * 60 * 1000));
+          expires = '; expires=' + date.toUTCString();
+        }
+        document.cookie = name + '=' + value + expires + '; path=/';
+      }
+
+      // 쿠키 가져오기 함수
+      function getCookie(name) {
+        const value = '; ' + document.cookie;
+        const parts = value.split('; ' + name + '=');
+        if (parts.length === 2) return parts.pop().split(';').shift();
+      }
+
+      // ESC 키로 팝업 닫기
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+          closeNoticePopup();
+        }
+      });
+
+      // 팝업 외부 클릭시 닫기
+      document.getElementById('noticePopup').addEventListener('click', function(e) {
+        if (e.target === this) {
+          closeNoticePopup();
+        }
+      });
+    </script>
+  </body>
+</html>
