@@ -24,7 +24,7 @@
         <div class="hidden md:flex space-x-6">
           <a href="#home" class="hover:text-yellow-500 transition">홈</a>
           <a href="#download" class="hover:text-yellow-500 transition">다운로드</a>
-          <a href="#partner" class="hover:text-yellow-500 transition">총판모집</a>
+          <a href="#" class="blink">추천코드 3456</a>
           <a href="https://t.me/PP365KK" target="_blank" class="hover:text-yellow-500 transition">가입문의</a>
         </div>
         <!-- 모바일 메뉴 버튼 -->
@@ -39,11 +39,30 @@
         <div class="flex flex-col space-y-4">
           <a href="#home" class="hover:text-yellow-500 transition">홈</a>
           <a href="#download" class="hover:text-yellow-500 transition">다운로드</a>
-          <a href="#partner" class="hover:text-yellow-500 transition">총판모집</a>
+           <a href="#" class="blink">추천코드 3456</a>
           <a href="#contact" class="hover:text-yellow-500 transition">가입문의</a>
         </div>
       </div>
     </nav>
+
+
+<style>
+@keyframes rainbowBlink {
+  0%   { color: red; }
+  14%  { color: orange; }
+  28%  { color: yellow; }
+  42%  { color: green; }
+  57%  { color: blue; }
+  71%  { color: indigo; }
+  85%  { color: violet; }
+  100% { color: red; }
+}
+
+.blink {
+  animation: rainbowBlink 1s infinite;
+  font-weight: bold;
+}
+</style>
 
     <!-- 히어로 섹션을 슬라이드로 수정 -->
     <section id="home" class="min-h-screen relative overflow-hidden bg-gradient-to-b from-gray-800 to-gray-900">
@@ -1154,3 +1173,4 @@
     </script>
   </body>
 </html>
+
