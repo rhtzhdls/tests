@@ -15,35 +15,42 @@
     </style>
   </head>
   <body class="bg-gray-900 text-white">
-    <!-- 네비게이션 바 수정 -->
-    <nav class="fixed w-full bg-gray-900/50 backdrop-blur-sm z-50">
-      <div class="container mx-auto px-8 py-4 flex justify-between items-center">
-        <div class="flex items-center">
-          <img src="images/logo.png" alt="365포커 로고" class="h-10 md:h-16" />
-        </div>
-        <div class="hidden md:flex space-x-6">
-          <a href="#home" class="hover:text-yellow-500 transition">홈</a>
-          <a href="#download" class="hover:text-yellow-500 transition">다운로드</a>
-          <a href="#" class="blink">추천코드 3456</a>
-          <a href="https://t.me/PP365KK" target="_blank" class="hover:text-yellow-500 transition">가입문의</a>
-        </div>
-        <!-- 모바일 메뉴 버튼 -->
-        <button id="mobileMenuButton" class="md:hidden text-white hover:text-yellow-500 transition">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-        </button>
-      </div>
-      <!-- 모바일 메뉴 -->
-      <div id="mobileMenu" class="hidden md:hidden bg-gray-800 p-4">
-        <div class="flex flex-col space-y-4">
-          <a href="#home" class="hover:text-yellow-500 transition">홈</a>
-          <a href="#download" class="hover:text-yellow-500 transition">다운로드</a>
-           <a href="#" class="blink">추천코드 3456</a>
-          <a href="#contact" class="hover:text-yellow-500 transition">가입문의</a>
-        </div>
-      </div>
-    </nav>
+      <nav class="fixed w-full bg-gray-900/50 backdrop-blur-sm z-50">
+  <div class="container mx-auto px-8 py-4 flex justify-between items-center">
+    <!-- 왼쪽: 로고 -->
+    <div class="flex items-center">
+      <img src="images/logo.png" alt="365포커 로고" class="h-10 md:h-16">
+    </div>
+
+    <!-- 가운데: 추천코드 (모바일에서도 항상 보임) -->
+    <div class="flex-1 flex justify-center">
+      <a href="#" class="blink text-lg md:text-2xl font-bold">추천코드 3456</a>
+    </div>
+
+    <!-- 오른쪽: 메뉴 (PC에서만 보임) -->
+    <div class="hidden md:flex space-x-6">
+      <a href="#home" class="hover:text-yellow-500 transition">홈</a>
+      <a href="#download" class="hover:text-yellow-500 transition">다운로드</a>
+      <a href="https://t.me/PP365KK" target="_blank" class="hover:text-yellow-500 transition">가입문의</a>
+    </div>
+
+    <!-- 모바일 메뉴 버튼 -->
+    <button id="mobileMenuButton" class="md:hidden text-white hover:text-yellow-500 transition">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+  </div>
+
+  <!-- 모바일 메뉴 -->
+  <div id="mobileMenu" class="md:hidden bg-gray-800 p-4" style="animation: 0.3s ease-out 0s 1 normal none running slideDown;">
+    <div class="flex flex-col space-y-4">
+      <a href="#home" class="hover:text-yellow-500 transition">홈</a>
+      <a href="#download" class="hover:text-yellow-500 transition">다운로드</a>
+      <a href="#contact" class="hover:text-yellow-500 transition">가입문의</a>
+    </div>
+  </div>
+</nav>
 
 
 <style>
@@ -300,38 +307,6 @@
       </div>
     </section>
 
-    <!-- 파트너 모집 섹션 수정 -->
-    <section id="partner" class="py-20 md:py-40 bg-gradient-to-b from-gray-900 to-gray-800">
-      <div class="container mx-auto px-8">
-        <h2 class="text-lg md:text-3xl font-bold text-center mb-12">365포커 협력 파트너 모집</h2>
-        <div class="grid md:grid-cols-2 gap-8 items-center max-w-6xl mx-auto">
-          <!-- 이미지 추가 -->
-          <div class="order-2 md:order-1">
-            <img src="images/draw-partner.png" alt="파트너십 프로그램" class="w-full max-w-lg mx-auto" />
-          </div>
-          <!-- 텍스트 컨텐 -->
-          <div class="bg-gray-700 p-8 rounded-xl order-1 md:order-2">
-            <p class="text-sm md:text-lg text-gray-300 mb-6">
-
-              본사의 직영 파트너모집중 입니다.<br/>
-              직영파트너는 2025년 4월1일까지만 모집하며<br/>
-              4월1일 이후에는 각종 매체를 통해 홍보를 <br/>
-              진행하고 있는 파트너에게 문의주셔야 합니다.<br/>
-              파트너 문의는 아래 버튼을 눌러주세요.
-            </p>
-            <div class="text-center">
-              <a
-                href="https://t.me/PP365KK"
-                target="_blank"
-                class="bg-yellow-500 hover:bg-yellow-600 text-black px-8 py-3 rounded-full font-bold transition inline-block"
-              >
-                파트너 문의하기
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- 다운로드 섹션 수정 -->
     <section id="download" class="py-20 md:py-40 bg-gradient-to-b from-gray-800 to-gray-900 relative">
@@ -420,7 +395,7 @@
           >
           설치후
           <a
-            href="https://t.me/PP365KK"
+            href="https://t.me/momi882"
             target="_blank"
             class="text-yellow-500 hover:text-yellow-600 transition font-bold underline relative z-20"
             >텔레그램 고객센터</a
@@ -1173,4 +1148,5 @@
     </script>
   </body>
 </html>
+
 
